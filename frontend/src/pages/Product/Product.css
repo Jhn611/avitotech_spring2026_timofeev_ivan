@@ -1,0 +1,174 @@
+.itemDetail{
+    padding: 60px 0 0 0;
+    width: 1335px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+.itemDetailTitle, .itemDetailSubTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.itemDetailTitle h1{
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 30px;
+}
+.itemDetailSubTitle h2{
+    margin: 0;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+}
+.dates{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+}
+.edit{
+    padding: 0;
+    width: 170px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.edit p{
+    margin: 0;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+.edit img{
+    width: 18px;
+    height: 18px;
+}
+
+.loadingContainerProduct, .errorMessageProduct{
+  width: 1335px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+}
+.itemDetailMain{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        gap: 30px;
+}
+.itemDetailMainText{
+    display: flex;
+    flex-direction: column;
+
+}
+.improve-box {
+width: 512px;
+height: auto;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-family: Roboto ;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.122);
+}
+
+.improve-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.improve-header h3 {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1E1E1E;
+}
+
+.improve-content{
+  margin: 7px 0 3px 0;
+  padding: 0 0 0 29px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000D9;
+}
+.improve-content p{
+  margin: 0;
+}
+
+.improve-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.improve-content li {
+  margin: 5px 0;
+}
+
+.characteristics-list{
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Inter;
+    font-size: 16px;
+}
+.characteristics-list .char-value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-weight: 400;
+    color: #1E1E1E;
+}
+.characteristics-list .char-label{
+    font-weight: 600;
+    color: #00000073;
+}
+.itemDetailDescription{
+    
+}
+.itemDetailDescription h1{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000D9;
+}
+.itemDetailDescription p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1E1E1E;
+}
+
+.char-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;   /* можно менять ширину первой колонки */
+  gap: 16px;
+  align-items: baseline;
+}
+
+.char-label {
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+

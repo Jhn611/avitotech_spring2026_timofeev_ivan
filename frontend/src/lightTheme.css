@@ -1,0 +1,146 @@
+html{
+  background-color: #F7F5F8;
+}
+h1{
+    color: #000;
+}
+.headerText h2{
+    color: #848388;
+}
+.searchBlock{
+    background-color: #ffffff;
+}
+.searchBar{
+    background-color: #F6F6F8;
+}
+.sortSelect{
+    border-color: #f4f4f6;
+    background-color: white;
+}
+.sortSelect:hover {
+  border-color: #f0f0f1;
+}
+.sortSelect:focus {
+  border-color: #e5e5e6;
+}
+.sortOption:hover {
+  background-color: #abd7ff;
+}
+
+.sortOption.selected {
+  background-color: #1890FF;
+  color: white;
+}
+.changeView{
+    background-color: #F4F4F6;
+}
+.whiteLine{
+    background-color: #FFFFFF;
+}
+.card{
+     border-color: #F0F0F0;
+     background-color: #FFFFFF;
+}
+.cardType{
+    border-color: #D9D9D9;
+    background-color: #FFFFFF;
+}
+.cardType p{
+    color: #000000D9;
+}
+.cardText h2{
+    color: #00000073;
+}
+.cardRevision{
+    background-color: #F9F1E6;
+    color: #FAAD14;
+}
+.cardRevisionCircle{
+    background-color: #FAAD14;
+}
+.pagination button.active {
+  color: #1890FF;
+  border-color: #1890FF;
+}
+.pagination button {
+  border-color: #D9D9D9;
+  background: #FFFFFF;
+}
+.pagination button:hover:not(:disabled) {
+  background: #D9D9D9;
+}
+.filterMain{
+background-color: #ffffff;   
+}
+
+.spaceLine{
+    background-color: #F0F0F0;
+}
+.resetButton{
+    color: #848388;
+    background: #FFFFFF;
+}
+.resetButton:hover {
+  background: #e6e6e6;
+}
+.resetButton:active {
+  background: #d1d1d1;
+}
+.filterMain h1{
+    color: #000000D9;
+}
+
+input:checked + .slider {
+  background-color: #1890FF;
+}
+
+.custom-checkbox:hover .checkmark {
+  border-color: #1890FF;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #1890FF;
+  border-color: #1890FF;
+}
+
+.edit{
+  background-color: #1890FF;
+  color: #ffffff;
+}
+.edit:hover{
+  background-color: #1788f1;
+}
+.edit:active{
+  background-color: #1673cb;
+  color: #9b9b9b;
+}
+.market-price-btn, .improve-btn{
+  background-color: #F9F1E6;
+  color: #FFA940;
+}
+.edit-form input, select{
+  border-color: #D9D9D9;
+}
+.edit-form input:focus{
+  outline: 2px solid #88c6ff;
+  border-color: #1890FF;
+}
+.edit-form select:focus{
+  border: 1px solid #D9D9D9;
+}
+
+.itemDetailTitle h1{
+    color: #000000D9;
+}
+.itemDetailSubTitle h2{
+  color: #848388;
+}
+.modal-success{
+  background-color: #cef3b3;
+  border: 1px solid #B7EB8F;
+ }
+
+ .improve-box {
+  background-color: #F9F1E6;
+  
+ }

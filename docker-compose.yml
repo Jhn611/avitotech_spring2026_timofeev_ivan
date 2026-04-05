@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  frontend-dev:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: frontend-dev
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules                # важно: защищает node_modules от перезаписи
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend-dev
+    # Если фронтенд использует Vite / React / etc., убедись, что он проксирует запросы на backend или использует http://backend-dev:3000
+
+  backend-dev:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.dev
+    container_name: backend-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server:/app
+      - /app/node_modules                # критично для корректной работы npm модулей
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    # Запускаем через tsx watch — это лучше, чем "npm run dev" (если скрипт dev не настроен на watch)
+    command: npx tsx watch server.ts
+    # Альтернатива, если хочешь оставить npm run dev:
+    # command: npm run dev
+
+  # Production backend (если понадобится)
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped

@@ -1,0 +1,111 @@
+header{
+  margin: 0 0 16px 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.headerText{
+  height: 61px;
+  padding: 13px 0 0 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* align-items: start; */
+  gap: 0px;
+}
+
+h1{
+  all: unset;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+h2{
+  all: unset;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.loadingContainer, .errorMessage, .noItems{
+  width: 1056px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e0e0e0;
+  border-top: 5px solid #3b82f6; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.cards{
+  width: 1055px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  gap: 16px;
+}
+
+.pagination {
+  margin: 40px 0 20px;
+  /* padding: 0 0 0 64px; */
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  width: 32px;
+  height: 32px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.paginationArrow {
+  padding: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paginationArrow img{
+  width: 12px;
+  height: 12px;
+}
+
+main{
+  width: 1335px;
+  height: 590px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
