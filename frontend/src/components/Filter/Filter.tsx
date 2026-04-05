@@ -25,7 +25,7 @@ function Filter({
   setOnlyNeedsRevision,
   onResetFilters,
 }: FiltersProps) {
-  const [isOpen, setIsOpen] = useState(true); // сворачиваемое меню открыто по умолчанию
+  const [isOpen, setIsOpen] = useState(true); 
 
   const toggleCategory = (value: string) => {
     if (selectedCategories.includes(value)) {

@@ -82,15 +82,12 @@ function Edit() {
 
         if (savedData) {
           setFormData(savedData);
-          // Важно: item всё равно нужно установить, чтобы не показывало "Не найдено"
-          // Можно оставить как null или сделать минимальный объект, но проще — загрузить с сервера
-          const serverData = await getItemById(id); // загружаем мета-данные
+          const serverData = await getItemById(id); 
           setItem(serverData);
           setLoading(false);
           return;
         }
 
-        // Если нет сохранённых данных — обычная загрузка
         const data = await getItemById(id);
         setItem(data);
 

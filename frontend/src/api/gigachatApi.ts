@@ -46,7 +46,7 @@ const getAccessToken = async (): Promise<string> => {
     console.error('❌ GigaChat OAuth ОШИБКА:');
     if (err.response) {
       console.error('Status:', err.response.status);
-      console.error('Данные ответа:', err.response.data);   // ← вот что важно увидеть
+      console.error('Данные ответа:', err.response.data);  
       console.error('Headers:', err.response.headers);
     } else {
       console.error('Сообщение:', err.message);
