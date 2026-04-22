@@ -9,7 +9,7 @@
 .edit-page  h1{
   margin: 20px 0;
   width: 100%;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 500;
 }
 
@@ -26,7 +26,7 @@
   align-items: center;
   gap: 6px;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 .edit-form label img{
@@ -65,7 +65,7 @@ hr {
 .container p{
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .price-row {
   position: relative;
@@ -89,7 +89,7 @@ hr {
   align-items: center;
   gap: 6px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   border: none;
   border-radius: 8px;
 }
@@ -119,12 +119,12 @@ hr {
 .modal-content h3{
   margin: 0;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .modal-result {
   white-space: pre-wrap;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
@@ -142,7 +142,7 @@ hr {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: Roboto;
   font-weight: 400;
 }
@@ -238,7 +238,7 @@ hr {
   align-items: center;
   justify-content: start;
   gap: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: Roboto;
   font-weight: 400;
  }
@@ -255,7 +255,7 @@ hr {
   align-items: center;
   justify-content: end;
   gap: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: Roboto;
   font-weight: 400;
  }

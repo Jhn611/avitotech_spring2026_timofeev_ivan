@@ -10,8 +10,11 @@ h1{
 .searchBlock{
     background-color: #ffffff;
 }
-.searchBar{
+.searchString{
     background-color: #F6F6F8;
+}
+.searchStringPlaceholder{
+  color: #848388;
 }
 .sortSelect{
     border-color: #f4f4f6;

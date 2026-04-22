@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import searchIcon from "../../assets/imgs/icon-wrapper.svg";
 import cardsIcon from "../../assets/imgs/Vector.svg";
 import listIcon from "../../assets/imgs/UnorderedList.svg";
 import down from "../../assets/imgs/icon-select.svg";
 import "./SearchBar.css";
+import SearchString from "../SearchString/SearchString"
 
 interface SearchBarProps {
   sortValue: string;
@@ -47,17 +47,6 @@ function SearchBar({
     localStorage.setItem("sort", sortValue);
   }, [sortValue]);
 
-  const handleSearch = () => {
-    const trimQuery = searchQuery.trim();
-    onSearch(trimQuery);
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      handleSearch();
-    }
-  };
-
   const selectedLabel =
     sortOptions.find((opt) => opt.value === sortValue)?.label ||
     "По новизне (сначала новые)";
@@ -84,18 +73,7 @@ function SearchBar({
   return (
     <>
       <div className="searchBlock">
-        <div className="searchBar" style={{ width: `${selectWidth}px` }}>
-          <input
-            placeholder="Найти объявление...."
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={handleKeyDown}
-          />
-          <div className="searchButton" onClick={handleSearch}>
-            <img src={searchIcon} alt="Search" />
-          </div>
-        </div>
+        <SearchString searchQuery={searchQuery} setSearchQuery={setSearchQuery} selectWidth={selectWidth} onSearch={onSearch}/>
         <div className="changeView">
           <img src={cardsIcon} alt="" />
           <div className="whiteLine"></div>
